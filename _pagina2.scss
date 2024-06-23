@@ -1,0 +1,194 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+/*--header*/
+
+.mercado{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(13, 9, 31);
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.cabeza-content{
+    
+    background-image: url(imagenes/fondo.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+   
+}
+
+.cabeza-txt{
+    
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.cabeza-txt h1{
+    font-size: 60px;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.cabeza-txt p {
+    font-size: 1.5rem;
+    color: #dddddd;
+    margin-bottom: 35px;
+    
+}
+
+.ton{
+    display: flex;
+}
+
+.btn-1, .btn-2, .btn-3{
+    display: inline-block;
+    padding: 11px 35px;
+    border: 2px solid green;
+    border-radius: 25px;
+    margin-right: 25px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.btn-1:hover{
+    background-color: black;
+}
+/*--fin header*/
+
+/*--main*/
+.popular{
+    padding: 100px 0;
+    text-align: center ;
+}
+
+h2{
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.popular-content{
+   padding: 20px 30px;
+    display: inline-block;
+}
+
+.popular-content img{
+    width: 150px;
+    
+}
+
+.product-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+
+    
+}
+
+.productos1{
+    background-color: rgb(29, 29, 29) ;
+}
+
+.productos-txt{
+    padding: 30px 30px ;
+}
+
+h3{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.price p{
+    font-size: 17px;
+    color:darkgreen ;
+}
+
+.btn-2{
+    padding:5px 25px;
+    background-color: black ;
+    margin-right: 0;
+}
+
+.contact{
+    padding: 50px 250px ;
+}
+
+.contact-content{
+    background-color:rgb(13, 13, 51)  ;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50px;
+}
+/*-- fin main*/
+
+/*--footer*/
+form{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.in{
+    padding: 18px 25px;
+    background-color: rgb(17, 17, 48);
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 17px;
+}
+
+::placeholder{
+    color: #fff;
+    font-size: 17px;
+}
+
+.btn-3{
+    background-color: green;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px ;
+    background-color: black;
+}
+
+.linked ul{
+    display: flex;
+    background-color: black;
+}
+
+.linked ul li > a{
+    font-size: 17px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.linked ul li > a:hover{
+    color: green;
+}
+
+/*--fin footer*/

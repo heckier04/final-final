@@ -1,0 +1,206 @@
+@import"_main.scss";
+@import"_pagina2.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif,'Times New Roman';
+}
+    /*--header index*/
+.inicio{
+    min-height: 100vh;
+    background: url(imagenes/game.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+
+.header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, trasparent, rgba(255, 255, 255, .4), trasparent);
+    transition: .5s;
+}
+
+.header:hover::after{
+    left: 100%;
+}
+
+.logo{
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+
+#check{
+    display: none;
+}
+
+.icons{
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+} 
+
+/*--fin header index*/
+
+/*medidas*/
+
+@media (max-width:900px){
+    .header{
+        padding: 1.3rem 5%;
+    }
+    .titulo, .descripcion_menu{
+        text-align: center;
+    }
+    .main_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cabeza-txt{
+        text-align: center;
+        flex-basis: 100%;
+        padding-right: 50px;
+    }
+    .cabeza-txt h1{
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    .ton{
+        justify-content: center;
+    }
+    .btn-1:last-of-type{
+        margin-right: 0;
+    }
+
+    .pupular{
+        display: none;
+    }
+
+    .product{
+        padding: 30px;
+    }
+
+    .product-content{
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+
+    .productos1 img{
+        width: 100%;
+    }
+
+    .contact{
+        padding: 30px;
+    }
+
+    form{
+        flex-direction: column;
+    }
+
+   .in{
+        margin: 0 0 20px 0;
+    }
+
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .linked ul{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:700px){
+    .icons{
+        display: inline-flex;
+    }
+    
+    #ok:checked~.icons #menu-down{
+        display: none;
+    }
+    
+    .icons #menu-up{
+        display: none;
+    }
+   
+    #check:checked~.icons #menu-up{
+        display: block;
+    }
+
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width:100%;
+        height: 0;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        box-shadow: 0.5rem 1rem  rgba(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.navbar{
+        height: 18rem;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 2rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        transition: .3s ease;
+    }
+
+    #check:checked~.navbar a {
+        transform: translateY(0);
+       
+    }
+    
+}
+

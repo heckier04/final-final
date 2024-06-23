@@ -1,0 +1,81 @@
+/*-- main index*/
+main{
+    padding: 200px 0;
+    text-align: center;
+}
+
+
+
+.titulo-inicio{
+    text-align: center;
+    
+}
+
+.titulo{
+    font-size: 1.8rem;
+    font-family: monospace;
+    padding-bottom: 100px;
+}
+
+.t_1{
+    font-size: 3rem;
+    color: aliceblue;
+}
+
+.t_2{
+    color: #304e27;
+    
+}
+
+.descripcion-menu{
+    font-size: 1.8rem;
+    color: rgb(252, 81, 51);
+    margin-bottom: 50px;
+    padding: 0 100px;
+    background-color: rgb(0, 0, 0);
+}
+
+.accion{
+    text-align: center;
+   
+}
+ 
+.prime a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.prime{
+   background: black;
+   cursor: pointer;
+    border: none; 
+    padding: 16px 32px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+.prime::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,red,blue,deeppink,blue,red,deeppink,blue );
+    background-size:800% ;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+@keyframes glowing{
+    0%{background-position: 0 0;}
+    50%{background-position: 400% 0;}
+    100%{background-position: 0 0;}
+
+}
+
+/*--fin main index--*/
